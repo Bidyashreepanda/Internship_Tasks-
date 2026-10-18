@@ -1,0 +1,18 @@
+# Problem 14: Anagram
+# HackerRank: https://www.hackerrank.com/challenges/anagram/problem
+
+from collections import Counter
+
+q = int(input())
+
+for _ in range(q):
+    s = input().strip()
+    if len(s) % 2:
+        print(-1)
+        continue
+
+    mid = len(s) // 2
+    first = Counter(s[:mid])
+    second = Counter(s[mid:])
+    print(sum((first - second).values()))
+

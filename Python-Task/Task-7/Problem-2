@@ -1,3 +1,6 @@
+# Problem 2: The Captain's Room
+# HackerRank: https://www.hackerrank.com/challenges/py-the-captains-room/problem
+
 k = int(input())
 rooms = list(map(int, input().split()))
 counts = {}
@@ -9,4 +12,3 @@ for room, count in counts.items():
     if count == 1:
         print(room)
         break
-

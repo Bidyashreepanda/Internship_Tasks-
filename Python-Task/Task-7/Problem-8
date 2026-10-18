@@ -1,3 +1,6 @@
+# Problem 8: Gemstones
+# HackerRank: https://www.hackerrank.com/challenges/gem-stones/problem
+
 n = int(input())
 common = set(input().strip())
 

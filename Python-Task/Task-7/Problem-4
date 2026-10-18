@@ -1,3 +1,6 @@
+# Problem 4: Funny String
+# HackerRank: https://www.hackerrank.com/challenges/funny-string/problem
+
 q = int(input())
 
 for _ in range(q):

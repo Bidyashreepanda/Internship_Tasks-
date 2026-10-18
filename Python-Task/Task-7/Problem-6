@@ -1,0 +1,2 @@
+s = input().lower()
+print("pangram" if set("abcdefghijklmnopqrstuvwxyz").issubset(set(s)) else "not pangram")

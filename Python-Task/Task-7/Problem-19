@@ -1,0 +1,22 @@
+# Problem 19: Weighted Uniform Strings
+# HackerRank: https://www.hackerrank.com/challenges/weighted-uniform-string/problem
+
+s = input().strip()
+n = int(input())
+queries = [int(input()) for _ in range(n)]
+
+weights = set()
+current_weight = 0
+previous = ""
+
+for char in s:
+    value = ord(char) - ord('a') + 1
+    if char == previous:
+        current_weight += value
+    else:
+        current_weight = value
+        previous = char
+    weights.add(current_weight)
+
+for query in queries:
+    print("Yes" if query in weights else "No")

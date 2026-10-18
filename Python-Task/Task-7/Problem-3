@@ -1,3 +1,6 @@
+# Problem 3: Mars Exploration
+# HackerRank: https://www.hackerrank.com/challenges/mars-exploration/problem
+
 s = input().strip()
 
 count = 0
